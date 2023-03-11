@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Space Landing Page</title>
+    <body>
+        <nav class="nav">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+        <section class="parallax">
+            <div class="parallax-overlay"></div>
+            <div class="parallax-content">
+                <h1>Welcome to Space Landing</h1>
+                <p>Discover the wonders of the universe with us</p>
+            </div>
+        </section>
+        <section class="about">
+            <div class="about-overlay"></div>
+            <div class="about-content">
+                <h2>About Us</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam bibendum lacus eget ipsum sodales venenatis.</p>
+            </div>
+        </section>
+        <section class="another">
+            <h2>Another Section</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam bibendum lacus eget ipsum sodales venenatis.</p>
+        </section>
+    </body>
+
+
+
+
+
+    <style>
+        /* General styles */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: #fff;
+        }
+
+        /* Parallax section styles */
+        .parallax {
+            background-image: url('https://media.discordapp.net/attachments/1084167205735890984/1084171674523549706/sleepy_scatt_A_boy_walking_out_of_a_broken_down_space_ship_on_a_87debd06-f66f-4225-af54-e1554d1da67f.png');
+            height: 100vh;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+
+        .parallax-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .parallax-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: #fff;
+            z-index: 1;
+        }
+
+        .parallax-content h1 {
+            font-size: 72px;
+            margin-bottom: 20px;
+        }
+
+        .parallax-content p {
+            font-size: 24px;
+            margin-bottom: 40px;
+        }
+
+        /* Navigation styles */
+        .nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+            backdrop-filter: blur(10px);
+            z-index: 2;
+        }
+
+        .nav a {
+            color: #fff;
+            font-size: 18px;
+            font-weight: bold;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+
+        .nav a:hover {
+            color: #FFD700;
+        }
+
+        /* Custom scrollbar styles */
+        ::-webkit-scrollbar {
+            width: 12px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 6px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: rgba(255, 255, 255, 0.5);
+            border-radius: 6px;
+        }
+
+        /* About section styles */
+        .about {
+            background-image: url('https://source.unsplash.com/random/1920x1080/?space');
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            image-rendering: optimizeQuality;
+        }
+
+        .about h2 {
+            font-size: 72px;
+            margin-bottom: 20px;
+        }
+
+        .about p {
+            font-size: 24px;
+            margin-bottom: 40px;
+        }
+
+        /* Another section styles */
+        .another {
+            background-color: #333;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
